@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% if messages %}   
+    {% for message in messages %}
+        <div id="my-alert" class="alert" style="width: 100%; text-align: center; border: 1px solid #000; box-shadow: 4px 4px;">
+            <h4>{{ message }}</h4>
+        </div>
+        <script>setTimeout(()=>document.getElementById('my-alert').remove(),2500)</script>
+    {% endfor %}
+{% endif %}
+
+
+{% if all_items %}  
+    {% for things in all_items %}
+        {{ things.item }} | {{things.completed}}     
+    {% endfor %}
+{% endif %}
+{% endblock  %}
