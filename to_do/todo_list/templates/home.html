@@ -18,17 +18,17 @@
         
         {% if things.completed  %}            
             <tr class="table-secondary">
-                <td class='striker'>{{things.item }}></td>
+                <td class='striker'>{{things.item }}</td>
                 <td> <center> <a href="uncross/{{things.id}}">Uncross</a></center></td>
-                <td> <center> <a href="delete/{{things.id}}">Delete</a></center> </td>
                 <td> <center> <a href="edit/{{things.id}}">Edit</a></center></td>
+                <td> <center> <a href="delete/{{things.id}}">Delete</a></center> </td>
             </tr>
         {% else %}
             <tr>
                 <td class='striker'>{{ things.item }}</a></td>
                 <td> <center><a href="cross_off/{{things.id}}">Cross Off</a></center> </td>
+                <td> <center> <a href="edit/{{things.id}}">Edit</a></center></td>
                 <td> <center><a href="delete/{{things.id}}">Delete</a></center> </td>
-                <td> <center><a href="edit/{{things.id}}">Edit</a></center></td>
             </tr>
         {% endif %}
 
