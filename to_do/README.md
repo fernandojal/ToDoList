@@ -88,6 +88,7 @@ You must have installed the last versions of
    ```sh
    bash app.sh
    ```
+5. Then open your browser and type the url given in terminal for example (http://127.0.0.1:8000/)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
