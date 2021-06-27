@@ -86,7 +86,7 @@ You must have installed the last versions of
    ```
 4. Then to start app copy and paste in same terminal:
    ```sh
-   chmod +x app.sh
+   bash app.sh
    ```
 
 <!-- USAGE EXAMPLES -->

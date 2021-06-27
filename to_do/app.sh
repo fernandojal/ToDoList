@@ -4,10 +4,8 @@ pip install pipenv
 
 pipenv install
 
-pipenv shell
+pipenv run pip install django
 
-pip install django
+pipenv run python manage.py migrate
 
-python manage.py migrate
-
-python manage.py runserver
+pipenv run python manage.py runserver
